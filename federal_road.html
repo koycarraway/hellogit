@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<!-- META -->
+<meta charset="UTF-8">
+
+<title>EOA - The Federal Road Initiative</title>
+
+<!-- LINK REL -->
+<link rel="stylesheet" href="css/global.css" media="screen" />
+<link rel="stylesheet" href="css/print.css" media="print" />
+<link rel="stylesheet" href="css/normalize_min.css"/>
+<link rel="stylesheet" href="css/jquery.jnotify.css"/>
+<link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css"/>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="css/ie_fix.css" />
+<![endif]-->
+
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="css/ie_fix.css" />
+<![endif]-->
+
+<!-- SCRIPT IMPORTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/jquery.easing-1.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.jnotify.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <!-- IE HTML5 Support-->
+
+<!-- FIXED FLOATING BAR -->
+<script type="text/javascript"> 
+$(document).ready(function () {  
+  var top = $('.breadcrumb_bar').offset().top - parseFloat($('.breadcrumb_bar').css('marginTop').replace(/auto/, 0));
+  $(window).scroll(function (event) {
+    // what the y position of the scroll is
+    var y = $(this).scrollTop();
+  
+    // whether that's below the form
+    if (y >= top) {
+      // if so, ad the fixed class
+      $('.breadcrumb_bar').addClass('fixed');
+    } else {
+      // otherwise remove it
+      $('.breadcrumb_bar').removeClass('fixed');
+    }
+  });
+});
+</script>
+
+<!-- FANCYBOX/LIGHTBOX IMAGE VIEWER -->
+<script>
+$(document).ready(function() {
+	/* This is basic - uses default settings */
+	$("a.pop").fancybox({
+		'overlayColor'	:	'#172128',
+		'overlayOpacity':	'0.7',
+		'opacity'		:	'true',
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	200,
+		'speedOut'		:	200,
+	});		
+});
+</script>
+
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+	  			containerID: 'moccaUItoTop', // fading element id
+				containerHoverClass: 'moccaUIhover', // fading element hover class
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+	 		};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+
+</head>
+
+<!-- BODY -->
+<body>
+
+<!-- WRAPPER -->
+<div id="wrapper">
+<!-- HEADER -->
+<header>
+	<div class="wrap">
+	<!-- EOA logo -->
+	<h1><a href="#" class="logo"><span>Encyclopedia of Alabama</span></a></h1>
+    
+    <!-- extra top links (donate,sponsors,partners) -->
+    <ul class="top_links">
+    	<li><a href="/face/Give.jsp" target="_blank">Becoming Alabama</a></li>
+    	<li><a href="/face/Give.jsp" target="_blank">Donate</a></li>
+        <li><a href="/face/Partners.jsp" target="_blank">Partners</a></li>
+        <li><a href="/face/Sponsors.jsp" target="_blank">Sponsors</a></li>
+    </ul>
+    
+    <div class="header_divider"></div>
+    
+    <!-- search bar --> 
+	<div class="search_wrapper">
+    	<div class="search_ribbon"></div>
+    	<form action="/face/SearchResult.jsp" target="_blank">
+			<input type="search" class="searchbox" placeholder="Search EOA by keyword or phrase" name="searchTerms">
+  			<input type="submit" value="Search" class="searchbox_submit">
+		</form>
+    </div> 
+    
+	<!-- navbar -->    
+	<nav>
+      <ul>
+        <li id="home"><a href="/face/Home.jsp" target="_blank">Home</a></li>
+        <li id="features"><a href="/face/Features.jsp" target="_blank">Features</a></li>
+        <li id="places"><a href="/face/PlacesIndex.jsp" target="_blank">Places</a></li>
+        <li id="galleries"><a href="/face/Galleries.jsp" target="_blank">Galleries</a></li>
+        <li id="quickfacts"><a href="/face/QuickFacts.jsp" target="_blank">Quick Facts</a></li>
+        <li id="glossary"><a href="/face/GlossaryIndex.jsp" target="_blank">Glossary</a></li>
+        <li id="indexes"><a href="/face/Indexes.jsp" target="_blank">Indexes</a></li>
+        <li id="about"><a href="/face/About.jsp" target="_blank">About EOA</a></li>
+        <li id="teacher"><a href="/face/Teachers.jsp" target="_blank">For Teachers</a></li>
+      </ul>
+    </nav> 
+    
+    </div> 
+</header>
+<!-- END HEADER -->
+
+<!-- breadcrumb bar -->
+<div class="breadcrumb_bar_wrapper">
+<div class="breadcrumb_bar">
+	<ul>
+    	<li class="breadcrumb_past"><a href="/face/Home.jsp" title="Home">Home</a></li>
+    	<li class="breadcrumb_current"><a href="#" title="The Federal Road Initiative Projects">Federal Road Initiative Projects</a></li>
+    </ul>
+</div>
+</div>
+
+<!-- section --> 
+<section>
+<h1><span>The Federal Road Initiative</span></h1>
+
+<!-- social icons --> 
+<div class="social_icons">
+	<ul>
+    	<li class="share"><a class='st_sharethis' title="Share This">Share</a></li>
+        <div class="social_divider"></div>
+    	<li class="email"><a href="mailto:editor@encyclopediaofalabama.org" title="Email">Email</a></li>
+        <div class="social_divider"></div>
+        <li class="print"><a href="#" title="Print" onClick=" window.print(); return false">Print</a></li>
+    </ul>
+</div>
+
+
+<!-- Federal Road summary_wrapper -->
+<div class="summary_wrapper">
+
+<!-- Federal Road summary_text -->
+	<a class="pop" href="images/map_large_popup.jpg"><img class="map" src="images/map_small.jpg" alt="Federal Road Map of 1814"/></a>
+	<div class="summary_text">
+	<p>This section of the <em>Encyclopedia of Alabama</em> (EOA) is part of the <b>Federal Road Initiative</b>, a program of the Alabama Cooperative Extension System to highlight sites of historical and cultural interest on or near the path of the <b>Old Federal Road</b>. The road, which stretched from Milledgeville, Georgia, to coastal Alabama, contributed to the development and growth of communities in Alabama. It followed a Native American trading route and was later developed for military use during the War of 1812 and the Creek War of 1813-1814. It then became a main route for settlers during the first half of the nineteenth century.</p>
+	<p>This page presents EOA articles related to the <b>Federal Road’s</b> role in the development of the state and region; it also presents articles about places of interest and events in 13 counties along its route. New content will be added to the section as it is developed.</p>
+	<p><b>This Federal Road</b> section of the <em>Encyclopedia of Alabama</em> is made possible by a grant from the Federal Road Initiative.</p>
+	</div>
+</div>
+
+<!-- 3 column section --> 
+<div class="3column_wrapper">
+
+	<!-- Creek War --> 
+	<div class="leftcolumn_wrapper">
+		<h2 class="people_h2"><span>People</span><div class="counter"></div></h2>
+        <div class="list_wrapper">
+        
+        	<!-- People -->
+        	<div class="category_dropdown_wrapper">
+            	<ul class="article_list">
+        	<li><a href="/face/Article.jsp?id=h-3135" target="_blank">Abraham Mordecai</a></li>
+			<li><a href="/face/Article.jsp?id=h-2313" target="_blank">Alexander McGillivray</a></li>
+       		<li><a href="/face/Article.jsp?id=h-2571" target="_blank">Bartram Trail Conference</a></li>
+            <li><a href="/face/Article.jsp?id=h-1058" target="_blank">Benjamin Hawkins</a></li>
+            <li><a href="/face/Article.jsp?id=h-1087" target="_blank">Cherokees in Alabama</a></li>
+            <li><a href="/face/Article.jsp?id=h-1487" target="_blank">Chickasaws in Alabama</a></li>
+            <li><a href="/face/Article.jsp?id=h-1186" target="_blank">Choctaws in Alabama</a></li>
+            <li><a href="/face/Article.jsp?id=h-1088" target="_blank">Creeks in Alabama</a></li>
+			<li><a href="/face/Article.jsp?id=h-1159" target="_blank">David Moniac</a></li>
+			<li><a href="/face/Article.jsp?id=h-1538" target="_blank">David Taitt</a></li>
+            <li><a href="/face/Article.jsp?id=h-3063" target="_blank">Edmund P. Gaines</a></li>
+			<li><a href="/face/Article.jsp?id=h-1124" target="_blank">Hank Williams Sr.</a></li>
+			<li><a href="/face/Article.jsp?id=h-3108" target="_blank">Harry Toulmin</a></li>
+            <li><a href="/face/Article.jsp?id=h-1126" target="_blank">Harper Lee</a></li>
+			<li><a href="/face/Article.jsp?id=h-3099" target="_blank">John Floyd</a></li>
+            <li><a href="/face/Article.jsp?id=h-1046" target="_blank">Lee and Susannah Compere</a></li>
+            <li><a href="/face/Article.jsp?id=h-1368" target="_blank">MOWA Band of Choctaw Indians</a></li>
+            <li><a href="/face/Article.jsp?id=h-3018" target="_blank">Pushmataha</a></li>
+            <li><a href="/face/Article.jsp?id=h-3049" target="_blank">Panton, Leslie & Company</a></li>
+            <li><a href="/face/Article.jsp?id=h-2460" target="_blank">Samuel Dale</a></li>
+			<li><a href="/face/Article.jsp?id=h-1115" target="_blank">Truman Capote</a></li>
+			<li><a href="/face/Article.jsp?id=h-1141" target="_blank">William Bartram</a></li>
+			<li><a href="/face/Article.jsp?id=h-1863" target="_blank">William McIntosh</a></li>
+            <li><a href="/face/Article.jsp?id=h-2593" target="_blank">William Weatherford (Red Eagle)</a></li>
+            	</ul>
+                <script>
+					$(document.body)
+						$listCount = $(".leftcolumn_wrapper .list_wrapper li").length;
+						$(".leftcolumn_wrapper .counter").append('<em>'+ $listCount + ' articles</em>');
+				</script>
+
+            	<div class="clear"></div>
+            </div>
+            
+        </div>
+        <div class="bottom_page_peel"></div>
+	</div>
+
+	<!-- Creek War --> 
+	<div class="middlecolumn_wrapper">
+		<h2 class="places_h2"><span>Places</span><div class="counter"></div></h2>
+        <div class="list_wrapper">
+        
+        	<!-- People -->
+        	<div class="category_dropdown_wrapper">
+            	<ul class="article_list">
+        			<li><a href="/face/Article.jsp?id=h-1164" target="_blank">Alabama Coastal Birding Trail</a></li>
+            <li><a href="/face/Article.jsp?id=h-2014" target="_blank">Alabama Department of Archives and History</a></li>
+			<li><a href="/face/Article.jsp?id=h-1653" target="_blank">Alabama Gulf Coast Zoo</a></li>
+			<li><a href="/face/Article.jsp?id=h-3123" target="_blank">Alabama Nature Center</a></li>
+			<li><a href="/face/Article.jsp?id=h-2390" target="_blank">Alabama Railroads</a></li>
+			<li><a href="/face/Article.jsp?id=h-3101" target="_blank">Alabama River Museum</a></li>
+            <li><a href="/face/Article.jsp?id=h-1023" target="_blank">Alabama Shakespeare Festival</a></li>
+			<li><a href="/face/Article.jsp?id=h-3111" target="_blank">Atmore</a></li>
+            <li><a href="/face/Article.jsp?id=h-2161" target="_blank">Bay Minette</a></li>
+            <li><a href="/face/Article.jsp?id=h-2130" target="_blank">Bellingrath Gardens and Home</a></li>
+            <li><a href="/face/Article.jsp?id=h-2458" target="_blank">Black Belt Region in Alabama</a></li>
+            <li><a href="/face/Article.jsp?id=h-3023" target="_blank">Blakely</a></li>
+			<li><a href="/face/Article.jsp?id=h-1160" target="_blank">Bottle Creek Site</a></li>
+			<li><a href="/face/Article.jsp?id=h-2507" target="_blank">Brewton</a></li>
+            <li><a href="/face/Article.jsp?id=h-2543" target="_blank">Camden</a></li>
+			<li><a href="/face/Article.jsp?id=h-3051" target="_blank">Chattahoochee Indian Heritage Center</a></li>
+            <li><a href="/face/Article.jsp?id=h-1039" target="_blank">Church Street Graveyard</a></li>
+            <li><a href="/face/Article.jsp?id=h-1639" target="_blank">Eufaula</a></li>
+            <li><a href="/face/Article.jsp?id=h-1161" target="_blank">Fairhope</a></li>
+			<li><a href="/face/Article.jsp?id=h-2999" target="_blank">Federal Road in Alabama</a></li>
+            <li><a href="/face/Article.jsp?id=h-3045" target="_blank">Foley</a></li>
+            <li><a href="/face/Article.jsp?id=h-3017" target="_blank">Fort Deposit</a></li>
+            <li><a href="/face/Article.jsp?id=h-2957" target="_blank">Fort Mitchell</a></li>
+            <li><a href="/face/Article.jsp?id=h-1800" target="_blank">Forts Morgan and Gaines</a></li>
+            <li><a href="/face/Article.jsp?id=h-1417" target="_blank">Fort Toulouse</a></li>
+            <li><a href="/face/Article.jsp?id=h-3052" target="_blank">Frisco City</a></li>
+            <li><a href="/face/Article.jsp?id=h-1094" target="_blank">Gee's Bend</a></li>
+            <li><a href="/face/Article.jsp?id=h-2933" target="_blank">Greenville</a></li>
+            <li><a href="/face/Article.jsp?id=h-2602" target="_blank">Gulf State Park</a></li>
+            <li><a href="/face/Article.jsp?id=h-2938" target="_blank">Hayneville</a></li>
+            <li><a href="/face/Article.jsp?id=h-3034" target="_blank">Historic Blakely State Park</a></li>
+			<li><a href="/face/Article.jsp?id=h-3109" target="_blank">Hurtsboro</a></li>
+            <li><a href="/face/Article.jsp?id=h-3014" target="_blank">Jackson</a></li>
+			<li><a href="/face/Article.jsp?id=h-3024" target="_blank">Legacy Museum of Tuskegee University</a></li>
+            <li><a href="/face/Article.jsp?id=h-3091" target="_blank">Lowndesboro</a></li>
+            <li><a href="/face/Article.jsp?id=h-1105" target="_blank">Magnolia Cemetery</a></li>
+            <li><a href="/face/Article.jsp?id=h-2162" target="_blank">Monroeville</a></li>
+            <li><a href="/face/Article.jsp?id=h-1853" target="_blank">Montgomery Zoo</a></li>
+			<li><a href="/face/Article.jsp?id=h-2389" target="_blank">Old Alabama Town</a></li>
+			<li><a href="/face/Article.jsp?id=h-3066" target="_blank">Old Monroe County Courthouse Museum</a></li>
+            <li><a href="/face/Article.jsp?id=h-3031" target="_blank">Pine Apple</a></li>
+            <li><a href="/face/Article.jsp?id=h-2133" target="_blank">Phenix City</a></li>
+            <li><a href="/face/Article.jsp?id=h-3065" target="_blank">Rikard's Mill Historic Park</a></li>
+			<li><a href="/face/Article.jsp?id=h-2921" target="_blank">Roland Cooper State Park</a></li>
+			<li><a href="/face/Article.jsp?id=h-3110" target="_blank">Saraland</a></li>
+			<li><a href="/face/Article.jsp?id=h-1140" target="_blank"><em>To Kill a Mockingbird</em></a></li>
+			<li><a href="/face/Article.jsp?id=h-2911" target="_blank">Troy University Rosa Parks Museum</a></li>
+            <li><a href="/face/Article.jsp?id=h-2051" target="_blank">Tuskegee</a></li>
+			<li><a href="/face/Article.jsp?id=h-1583" target="_blank">Tuskegee University</a></li> 
+            	</ul>
+                <script>
+					$(document.body)
+						$listCount = $(".middlecolumn_wrapper .list_wrapper li").length;
+						$(".middlecolumn_wrapper .counter").append('<em>'+ $listCount + ' articles</em>');
+				</script>
+
+            	<div class="clear"></div>
+            </div>
+            
+        </div>
+        <div class="bottom_page_peel"></div>
+	</div>
+
+	<!-- Creek War --> 
+	<div class="rightcolumn_wrapper">
+		<h2 class="events_h2"><span>Events</span><div class="counter"></div></h2>
+        <div class="list_wrapper">
+        
+        	<!-- People -->
+        	<div class="category_dropdown_wrapper">
+            	<ul class="article_list">
+        			<li><a href="/face/Article.jsp?id=h-3079" target="_blank">Battle of Autossee</a></li>
+			<li><a href="/face/Article.jsp?id=h-3081" target="_blank">Battle of Burnt Corn Creek</a></li>
+            <li><a href="/face/Article.jsp?id=h-1044" target="_blank">Battle of Horseshoe Bend</a></li>
+            <li><a href="/face/Article.jsp?id=h-1811" target="_blank">Battle of Holy Ground</a></li>
+            <li><a href="/face/Article.jsp?id=h-2620" target="_blank">Battle of Talladega</a></li>
+            <li><a href="/face/Article.jsp?id=h-2350" target="_blank">Battle of Tallushatchee</a></li>
+            <li><a href="/face/Article.jsp?id=h-1815" target="_blank">Canoe Fight</a></li>
+            <li><a href="/face/Article.jsp?id=h-1433" target="_blank">Cherokee Indian Removal</a></li>
+			<li><a href="/face/Article.jsp?id=h-3141" target="_blank">Coosa River Whitewater Festival</a></li>
+            <li><a href="/face/Article.jsp?id=h-2013" target="_blank">Creek Indian Removal</a></li>
+            <li><a href="/face/Article.jsp?id=h-1820" target="_blank">Creek War of 1813-1814</a></li>
+			<li><a href="/face/Article.jsp?id=h-1553" target="_blank">Green Corn Ceremony</a></li>
+            <li><a href="/face/Article.jsp?id=h-3070" target="_blank">First Treaty of Washington (1805)</a></li>
+            <li><a href="/face/Article.jsp?id=h-1121" target="_blank">Fort Mims Battle and Massacre</a></li>
+            <li><a href="/face/Article.jsp?id=h-2152" target="_blank">Lafayette's Visit to Alabama</a></li>
+            <li><a href="/face/Article.jsp?id=h-1437" target="_blank">Mobile's Mardi Gras</a></li>
+			<li><a href="/face/Article.jsp?id=h-1157" target="_blank">Stomp Dance</a></li>
+            <li><a href="/face/Article.jsp?id=h-1548" target="_blank">Territorial Period and Early Statehood Territorial Period and Early Statehood</a></li>
+            <li><a href="/face/Article.jsp?id=h-3083" target="_blank">Third Treaty of Washington (1832)</a></li>
+            <li><a href="/face/Article.jsp?id=h-3026" target="_blank">Treaty of Fort Jackson</a></li>
+			<li><a href="/face/Article.jsp?id=h-3133" target="_blank">Treaty of Indian Springs (1821)</a></li>
+            <li><a href="/face/Article.jsp?id=h-1453" target="_blank">Treaty of Indian Springs (1825)</a></li>
+			<li><a href="/face/Article.jsp?id=h-1537" target="_blank">Treaty of New York (1790)</a></li>
+            <li><a href="/face/Article.jsp?id=h-1452" target="_blank">Treaty of Washington (1826)</a></li> 
+            	</ul>
+                <script>
+					$(document.body)
+						$listCount = $(".rightcolumn_wrapper .list_wrapper li").length;
+						$(".rightcolumn_wrapper .counter").append('<em>'+ $listCount + ' articles</em>');
+				</script>
+
+            	<div class="clear"></div>
+            </div>
+            
+        </div>
+        <div class="bottom_page_peel"></div>
+	</div>
+    
+</div>
+</section>
+
+<!-- Clear Fix -->
+<div class="clear"></div>
+</div>
+<!-- END WRAPPER -->
+
+<!-- footer -->
+<footer>
+	<div class="wrap">
+      <ul>
+      	<li><a href="/face/Home.jsp" target="_blank">Home</a></li>
+        <li><a href="/face/Features.jsp" target="_blank">Features</a></li>
+        <li><a href="/face/PlacesIndex.jsp" target="_blank">Places</a></li>
+        <li><a href="/face/Galleries.jsp" target="_blank">Galleries</a></li>
+        <li><a href="/face/QuickFacts.jsp" target="_blank">Quick Facts</a></li>
+        <li><a href="/face/GlossaryIndex.jsp" target="_blank">Glossary</a></li>
+        <li><a href="/face/Indexes.jsp" target="_blank">Indexes</a></li>
+        <li><a href="/face/About.jsp" target="_blank">About EOA</a></li>
+        <li><a href="/face/Teachers.jsp" target="_blank">For Teachers</a></li>
+      </ul>
+    </div>
+</footer>
+
+<script>
+$('.counter').hover(function() {
+    $(this).animate({width: '77px'}, 400);},
+	function() {
+    $(this).animate({width: '30px'}, 400);});
+</script>
+
+<!-- Share This Button -->
+<script type="text/javascript">var switchTo5x=false;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'16c0cfc5-d175-4912-b663-560d25e75d8e', onhover: false, offsetTop: 5});</script>
+
+<!-- List Item animate scroller -->
+<script type="text/javascript">
+$('.list_wrapper li a').mouseover( function() {
+    if( this.offsetWidth > this.parentNode.offsetWidth ) {
+        $(this).animate({'left': '-'+(this.offsetWidth)+'px'}, 25000, function(){this.style.left='0px';});
+    }
+} ).mouseout( function() {
+    $(this).stop();
+    this.style.left = '0px';
+} );
+</script>
+    
+</body>
+</html>
